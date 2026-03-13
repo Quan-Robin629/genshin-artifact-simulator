@@ -10,27 +10,17 @@
 
 ---
 
-## 🚀 快速开始
-
-### 1. 环境依赖
-```bash
-pip install numpy
-
-# 执行主模拟函数
-expected_days = run_simulation(n_players=10000)
-print(f"平均毕业天数: {expected_days:.2f} 天")
-
-parts = [
-    ("花", "Flat_HP", ["CR", "CD", "ATK_Percent", "ER"]),
-    ("羽", "Flat_ATK", ["CR", "CD", "ATK_Percent", "ER"]),
-    ("沙", "ATK_Percent", ["CR", "CD", "ER"]),
-    ("杯", "ATK_Percent", ["CR", "CD", "ER"]),
-    ("头", "CD", ["CR", "ATK_Percent", "ER"])
-]
-
-genshin-artifact-simulator/
-├── Felice.py          # 主模拟代码
-├── README.md           # 项目说明文档
-└── requirements.txt    # 依赖清单
-
+🎯 适用场景
+角色养成规划：提前预估毕业周期
+概率研究：验证圣遗物系统的 “非酋 / 欧皇” 分布
+教学演示：蒙特卡洛方法的直观实践案例
+📝 注意事项
+本项目为娱乐向模拟工具，结果仅供参考，不代表游戏官方概率
+模拟中简化了部分机制（如散件规则、部位权重），可根据需求修改代码
+建议模拟玩家数 ≥ 10000 以保证结果稳定性
+🤝 贡献
+欢迎提交 Issue 或 Pull Request 来完善功能：
+新增角色毕业模板
+优化模拟性能
+增加可视化结果输出
 
