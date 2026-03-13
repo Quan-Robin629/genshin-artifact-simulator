@@ -16,17 +16,21 @@
 ```bash
 pip install numpy
 
-2. 运行模拟
 # 执行主模拟函数
 expected_days = run_simulation(n_players=10000)
 print(f"平均毕业天数: {expected_days:.2f} 天")
 
-📊 核心配置说明
-基础参数
-参数名	默认值	说明
-DAILY_RESIN	180	每日可用体力上限
-DROPS_PER_DAY	10.5	每日金色圣遗物掉落总数（含体力兑换）
-SET_PROB	0.5	目标套装掉落概率（50%）
-INIT_4_PROB	0.2	初始 4 词条圣遗物概率（20%）
-毕业标准
-默认以强化到有效副词条≥3 次作为单部位毕业判定，有效词条可根据角色需求自定义：
+parts = [
+    ("花", "Flat_HP", ["CR", "CD", "ATK_Percent", "ER"]),
+    ("羽", "Flat_ATK", ["CR", "CD", "ATK_Percent", "ER"]),
+    ("沙", "ATK_Percent", ["CR", "CD", "ER"]),
+    ("杯", "ATK_Percent", ["CR", "CD", "ER"]),
+    ("头", "CD", ["CR", "ATK_Percent", "ER"])
+]
+
+genshin-artifact-simulator/
+├── Felice.py          # 主模拟代码
+├── README.md           # 项目说明文档
+└── requirements.txt    # 依赖清单
+
+
